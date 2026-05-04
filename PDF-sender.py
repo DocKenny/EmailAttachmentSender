@@ -85,7 +85,7 @@ def main():
         body = config['EmailSettings']['body']
         sender_email = config['EmailSettings']['smtp_user']
         sender_password = config['EmailSettings']['smtp_password']
-        ssl_cert_path = 'config/cacert-2024-03-11.pem'
+        ssl_cert_path = config['EmailSettings']['ssl_cert_path']
 
         pdfs = get_pdfs()
         setup()
